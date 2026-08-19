@@ -40,7 +40,8 @@ Il benchmark di riferimento definito dagli autori per valutare la probabilità p
 L'Algoritmo 3 viene generalizzato sostituendo la funzione $\arg\max$ con l'estrazione dei primi $k$ massimi:
 
 1. Calcolo delle discrepanze su pesi e bias dell'ultimo layer per ogni classe $i \in \{0, \dots, 9\}$:
-$$v_{\mathrm{diff}}[i] = \|v_o[i] - v_u[i]\|_1, \quad b_{\mathrm{diff}}[i] = |b_o[i] - b_u[i]|$$
+`v_diff[i] = ||v_o[i] - v_u[i]||_1`
+`b_diff[i] = |b_o[i] - b_u[i]|`
 
 2. Calcolo dello Score normalizzato $S_d[i]$ ($\beta = 0.5$):
    $$S_d[i] = \beta \cdot \frac{v_{\mathrm{diff}}[i]}{\sum_{j=0}^{9} v_{\mathrm{diff}}[j]} + (1 - \beta) \cdot \frac{b_{\mathrm{diff}}[i]}{\sum_{j=0}^{9} b_{\mathrm{diff}}[j]}$$
