@@ -46,7 +46,7 @@ L'Algoritmo 3 viene generalizzato sostituendo la funzione $\arg\max$ con l'estra
    $$S_d[i] = \beta \cdot \frac{v_{\mathrm{diff}}[i]}{\sum_{j=0}^{9} v_{\mathrm{diff}}[j]} + (1 - \beta) \cdot \frac{b_{\mathrm{diff}}[i]}{\sum_{j=0}^{9} b_{\mathrm{diff}}[j]}$$
 
 3. Predizione dell'insieme delle classi rimosse:
-   $$\text{classes\_predicted} = \operatorname{Top-}k_i (S_d[i]), \quad \text{con } k = N_{\mathrm{uc}}$$
+   $$\mathrm{classes\_predicted} = \mathrm{Top-}k_i (S_d[i]), \quad \text{con } k = N_{\mathrm{uc}}$$
 
 ---
 
@@ -59,17 +59,5 @@ Il calo di accuratezza atteso sul modello unlearned $W^u$ rispetto all'originale
 * **$N_{\mathrm{uc}} = 3$:** calo teorico di circa il **30%** $\rightarrow \text{Acc } W^u \approx 66.0\% - 67.0\%$
 * **$N_{\mathrm{uc}} = 4$:** calo teorico di circa il **40%** $\rightarrow \text{Acc } W^u \approx 56.0\% - 57.0\%$
 
----
 
-## 📚 Riferimento Bibliografico
 
-```bibtex
-@article{zhou2026model,
-  title={Model inversion attack against federated unlearning},
-  author={Zhou, L. and Zhu, Y. and Liu, R.},
-  journal={IEEE Transactions on Information Forensics and Security},
-  volume={21},
-  pages={2342--2357},
-  year={2026},
-  publisher={IEEE}
-}
