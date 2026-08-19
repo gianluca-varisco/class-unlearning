@@ -10,7 +10,7 @@ Dopo aver validato l'efficacia dell'attacco sul caso a singola classe ($N_{\math
 
 In particolare, il test risponde a tre domande scientifiche:
 
-1. **Capacità di isolamento simultaneo (Top-$k$ Ranking):**  
+1. **Capacità di isolamento simultaneo (Top-k Ranking):**  
    Verificare se l'attaccante, estraendo i primi $k = N_{\mathrm{uc}}$ punteggi più elevati dallo Score di Discriminazione $S_d[i]$, sia in grado di isolare l'esatto sottoinsieme di classi cancellate senza falsi positivi.
 
 2. **Validazione della soglia di degradazione teorica ($N_{\mathrm{uc}} = 4$):**  
@@ -35,7 +35,7 @@ Il benchmark di riferimento definito dagli autori per valutare la probabilità p
 
 ---
 
-## 3. Metodologia di Calcolo Top-$k$
+## 3. Metodologia di Calcolo Top-k
 
 L'Algoritmo 3 viene generalizzato sostituendo la funzione $\arg\max$ con l'estrazione dei primi $k$ massimi:
 
