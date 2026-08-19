@@ -10,11 +10,11 @@ Nello scenario di Class Unlearning, l'obiettivo dell'attaccante è inferire qual
 
 L'attacco confronta i parametri dell'ultimo strato lineare di classificazione ($W^o$ e $W^u$) calcolando lo **Score di Discriminazione $S_d[i]$** per ciascuna classe $i \in \{0, \dots, S-1\}$:
 
-$$v_{diff}[i] = \|v_o[i] - v_u[i]\|_1, \quad b_{diff}[i] = |b_o[i] - b_u[i]|$$
+$$v_{\mathrm{diff}}[i] = \|v_o[i] - v_u[i]\|_1, \quad b_{\mathrm{diff}}[i] = |b_o[i] - b_u[i]|$$
 
-$$S_d[i] = \beta \cdot \frac{v_{diff}[i]}{\sum_{j=0}^{S-1} v_{diff}[j]} + (1 - \beta) \cdot \frac{b_{diff}[i]}{\sum_{j=0}^{S-1} b_{diff}[j]}$$
+$$S_d[i] = \beta \cdot \frac{v_{\mathrm{diff}}[i]}{\sum_{j=0}^{S-1} v_{\mathrm{diff}}[j]} + (1 - \beta) \cdot \frac{b_{\mathrm{diff}}[i]}{\sum_{j=0}^{S-1} b_{\mathrm{diff}}[j]}$$
 
-$$\text{class\_id} = \arg\max_i (S_d[i])$$
+$$\mathrm{class\_id} = \arg\max_i (S_d[i])$$
 
 ---
 
