@@ -2,7 +2,7 @@
 
 Implementation of the FUIA (Federated Unlearning Inversion Attack) from the paper
 "Model Inversion Attack Against Federated Unlearning" (Zhou et al., IEEE TIFS 2026),
-client unlearning scenario with Retraining (best version achieved).
+class unlearning scenario with Retraining (best version achieved).
 
 ## Setup
 
