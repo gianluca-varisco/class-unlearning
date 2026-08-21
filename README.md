@@ -52,3 +52,8 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 - L. Zhou, Y. Zhu, and R. Liu, *"Model Inversion Attack Against Federated Unlearning"*, IEEE Transactions on Information Forensics and Security, vol. 21, pp. 2342–2357, 2026. https://ieeexplore.ieee.org/document/11400570
 - N. Romandini, A. Mora, C. Mazzocca, R. Montanari, and P. Bellavista, *"Federated Unlearning: A Survey on Methods, Design Guidelines, and Evaluation Metrics"*, IEEE Transactions on Neural Networks and Learning Systems, 2024. https://doi.org/10.1109/TNNLS.2024.3478334
 - O. Piazzi, *"Analisi e implementazione di attacchi per ricostruzione dati nel Federated Unlearning"*, Relazione di Tirocinio. https://github.com/ottonepiazzi/federated-learning
+
+
+## Autore
+
+**Gianluca Varisco** — [github.com/gianluca-varisco](https://github.com/gianluca-varisco)
