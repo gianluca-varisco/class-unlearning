@@ -16,7 +16,7 @@ Tutti i test sono stati condotti mediante **Retraining federato da zero** per ga
 * **Epoche locali per client:** 3 epoche (Batch Size = 32, Learning Rate = 0.01 con linear decay)
 * **Iperparametro di discriminazione:** $\beta = 0.5$
 
-### 🔍 Motivazione Tecnica: Transizione da `DATA_PER_CLIENT = 1` a `100`
+###  Motivazione Tecnica: Transizione da `DATA_PER_CLIENT = 1` a `100`
 
 Nel paper originale (Sec. VI.B), gli autori utilizzano `DATA_PER_CLIENT = 1` abbinato a un pre-training centralizzato su 48.000 campioni. Rimuovendo il pre-training (necessario per evitare che il modello mantenga memoria centralizzata delle classi rimosse), la scelta del volume di dati locale impatta direttamente la stabilità dell'attacco:
 

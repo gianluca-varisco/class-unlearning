@@ -9,7 +9,7 @@ Il progetto rappresenta la prosecuzione e l'evoluzione del lavoro precedentement
 
 ---
 
-## 📌 Panoramica del Lavoro Svolto
+##  Panoramica del Lavoro Svolto
 
 Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Federated Unlearning via Retraining** contro attacchi di *Model Inversion* e *Class Discrimination*, confrontando i modelli originale ($W^o$) e disimparato ($W^u$).
 
@@ -30,7 +30,7 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 
 ---
 
-## 📊 Sintesi dei Risultati Sperimentali
+##  Sintesi dei Risultati Sperimentali
 
 | Scenario | Classi Rimosse ($N_{\mathrm{uc}}$) | Classi Identificate ($N_{\mathrm{ic}}$) | Esito Attacco | Accuracy $W^o \rightarrow W^u$ |
 | :--- | :---: | :---: | :---: | :---: |
@@ -41,7 +41,7 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 
 ---
 
-## 🛠️ Tecnologie Utilizzate
+##  Tecnologie Utilizzate
 
 * **PyTorch** & **Torchvision** (Deep Learning & CNN)
 * **Federated Averaging (FedAvg)** (Simulazione FL multi-client)

@@ -4,7 +4,7 @@ Questo modulo estende la valutazione dell'attacco **FUIA (Federated Unlearning I
 
 ---
 
-## 🎯 Obiettivo dell'Attacco
+##  Obiettivo dell'Attacco
 
 Nello scenario di Class Unlearning, l'obiettivo dell'attaccante è inferire quale etichetta di classe ($c_{target}$) è stata rimossa dal modello globale durante il processo di Federated Unlearning.
 
@@ -18,7 +18,7 @@ $$\mathrm{class\_id} = \arg\max_i (S_d[i])$$
 
 ---
 
-## 📊 Risultati Sperimentali e Studio di Ablazione
+##  Risultati Sperimentali e Studio di Ablazione
 
 Di seguito è riportato lo studio di sensitività parametrica condotto su dataset **MNIST** al variare delle epoche di pre-training centralizzato, dei campioni per client e dei round di addestramento federato:
 
@@ -32,7 +32,7 @@ Di seguito è riportato lo studio di sensitività parametrica condotto su datase
 
 ---
 
-## 🔍 Analisi Metodologica dei Risultati
+##  Analisi Metodologica dei Risultati
 
 1. **Effetto Distorsivo del Pre-training Centralizzato (`PRETRAIN_EPOCHS > 0`):**  
    Pre-addestrare centralmente il modello sull'intero dataset fissa i pesi dell'ultimo layer di classificazione prima dell'avvio del Federated Learning ($>98\%$ accuracy). I successivi round di retraining ($W^u$) inducono modifiche minime, riducendo la discrepanza $\Delta W$ a rumore numerico e causando predizioni errate (falsi positivi).
