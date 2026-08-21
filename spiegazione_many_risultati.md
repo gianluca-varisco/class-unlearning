@@ -113,17 +113,3 @@ La transizione dal $100\%$ di successo ($N_{\mathrm{uc}} \le 3$) alla comparsa d
 2. **Feature Backbone Drift:**
    Rimuovere 4 classi su 10 corrisponde all'eliminazione del **40% dell'intera distribuzione di addestramento**. Una variazione così marcata non altera unicamente lo strato lineare di classificazione, ma induce una riconfigurazione dell'estrattore convoluzionale sottostante durante il retraining federato. Ciò genera interferenze costruttive su classi visivamente o semanticamente correlate (come la cifra `4` rispetto alla cifra `3`), portando occasionalmente una classe trattenuta a scavalcare di misura una classe target.
 
----
-
-## Riferimenti Bibliografici
-
-```bibtex
-@article{zhou2026model,
-  title={Model inversion attack against federated unlearning},
-  author={Zhou, L. and Zhu, Y. and Liu, R.},
-  journal={IEEE Transactions on Information Forensics and Security},
-  volume={21},
-  pages={2342--2357},
-  year={2026},
-  publisher={IEEE}
-}

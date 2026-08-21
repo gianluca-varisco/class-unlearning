@@ -46,14 +46,3 @@ Di seguito è riportato lo studio di sensitività parametrica condotto su datase
 4. **Robustezza tra Classi Differenti:**  
    L'attacco ha raggiunto esito positivo sia sulla cifra **3** ($S_d = 0.2940$) che sulla cifra **7** ($S_d = 0.3261$) a fronte di un rumore di fondo medio sulle classi residue compreso tra $0.06$ e $0.09$, confermando l'indipendenza dell'Algoritmo 3 dalla specifica etichetta target.
 
----
-
-## 🚀 Come Riprodurre gli Esperimenti
-
-### Requisiti e Setup
-```bash
-git clone <URL_REPOSITORY>
-cd FUIA_Class_Unlearning
-python3 -m venv env
-source env/bin/activate  # Su Windows: env\Scripts\activate
-pip install -r requirements.txt
