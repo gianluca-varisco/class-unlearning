@@ -23,14 +23,14 @@ print(f"Device: {DEVICE}")
 #FL training (paper Section VI)
 NUM_CLIENTS      = 50
 FRACTION         = 0.2        #20% client participation per round
-NUM_ROUNDS       = 80         #paper: "80 training epochs"
+NUM_ROUNDS       = 50         #"50 training epochs"
 LOCAL_EPOCHS     = 3
 BATCH_SIZE       = 32
 FL_LR            = 0.01       #paper: "learning rate is set to 0.01"
-PRETRAIN_EPOCHS  = 5          #the paper specify 50
+PRETRAIN_EPOCHS  = 0          #apprendimento 100% federato
 PRETRAIN_LR      = 0.01
 NUM_CLASSES      = 10         #full MNIST (instead of only classes 0 and 1)
-DATA_PER_CLIENT  = 1          #paper Sec VI.B: "set the number of data points per client to 1"
+DATA_PER_CLIENT  = 100          #testato con 1 e 100
 
 # Gradient inversion
 INV_ITERATIONS   = 20000
