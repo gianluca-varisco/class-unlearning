@@ -5,7 +5,7 @@ Questo repository contiene l'implementazione, l'estensione e la validazione sper
 > **"Model Inversion Attack Against Federated Unlearning"**  
 > *L. Zhou, Y. Zhu, R. Liu* — IEEE Transactions on Information Forensics and Security, 2026.
 
-Il progetto rappresenta la prosecuzione e l'evoluzione del lavoro precedentemente svolto da **Piazzi**, estendendo l'analisi empirica e risolvendo i vincoli metodologici legati agli scenari di unlearning in Federated Learning (FL).
+Il progetto rappresenta la prosecuzione e l'evoluzione del lavoro precedentemente svolto da **Ottone Piazzi**, estendendo l'analisi empirica e risolvendo i vincoli metodologici legati agli scenari di unlearning in Federated Learning (FL).
 
 ---
 
@@ -47,17 +47,3 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 * **Federated Averaging (FedAvg)** (Simulazione FL multi-client)
 * **Weights & Biases (wandb)** (Tracking sperimentale)
 
----
-
-## 📚 Riferimento Bibliografico
-
-```bibtex
-@article{zhou2026model,
-  title={Model inversion attack against federated unlearning},
-  author={Zhou, L. and Zhu, Y. and Liu, R.},
-  journal={IEEE Transactions on Information Forensics and Security},
-  volume={21},
-  pages={2342--2357},
-  year={2026},
-  publisher={IEEE}
-}
