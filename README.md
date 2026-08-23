@@ -22,7 +22,7 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 * Raggiunto il **100% di successo** nell'identificazione della classe dimenticata tramite lo Score di Discriminazione $S_d[i]$.
 
 ### 3. Estensione Multi-Class Unlearning ($N_{\mathrm{uc}} \in \{2, 3, 4\}$)
-* Generalizzazione dell'attacco FUIA mediante ranking **Top-$k$** su $S_d[i]$ per l'identificazione contemporanea di più classi eliminate.
+* Generalizzazione dell'attacco FUIA mediante ranking **Top-k** su $S_d[i]$ per l'identificazione contemporanea di più classi eliminate.
 * Validazione empirica della **Table I** del paper:
   * **2 classi rimosse ($N_{\mathrm{uc}} = 2$):** $100\%$ Full Success ($N_{\mathrm{ic}} = 2/2$).
   * **3 classi rimosse ($N_{\mathrm{uc}} = 3$):** $100\%$ Full Success ($N_{\mathrm{ic}} = 3/3$).
