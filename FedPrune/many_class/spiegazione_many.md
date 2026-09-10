@@ -51,7 +51,7 @@ Per rilevare le classi disimparate, l'attaccante esegue l'**Algoritmo 3** genera
    $$\Delta w_i = \Vert w_o[i] - w_u[i] \Vert_1, \quad \Delta b_i = |b_o[i] - b_u[i]| \quad \forall i \in \{0, \dots, 9\}$$
 2. **Score di Discriminazione Normalizzato $S_d[i]$:**
    $$S_d[i] = \beta \frac{\Delta w_i}{\sum_j \Delta w_j} + (1 - \beta) \frac{\Delta b_i}{\sum_j \Delta b_j} \quad (\beta = 0.5)$$
-3. **Predizione Top-$k$:**
+3. **Predizione Top-k:**
    Si ordinano gli indici in ordine decrescente di punteggio $S_d[i]$ e si estraggono i primi $k = |C_{\mathrm{target}}|$ elementi:
    $$\hat{C}_{\mathrm{target}} = \text{Top-}k(S_d)$$
 
