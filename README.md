@@ -50,6 +50,7 @@ Il focus principale è stato analizzare la vulnerabilità dei meccanismi di **Fe
 ##  Riferimenti Bibliografici e Lavori Correlati
 
 - L. Zhou, Y. Zhu, and R. Liu, *"Model Inversion Attack Against Federated Unlearning"*, IEEE Transactions on Information Forensics and Security, vol. 21, pp. 2342–2357, 2026. https://ieeexplore.ieee.org/document/11400570
+- J. Wang, S. Guo, X. Xie, and H. Qi, *"Federated Unlearning via Class-Discriminative Pruning"*, in Proceedings of the ACM Web Conference 2022 (WWW '22), pp. 622–632, 2022. https://arxiv.org/pdf/2110.11794
 - N. Romandini, A. Mora, C. Mazzocca, R. Montanari, and P. Bellavista, *"Federated Unlearning: A Survey on Methods, Design Guidelines, and Evaluation Metrics"*, IEEE Transactions on Neural Networks and Learning Systems, 2024. https://doi.org/10.1109/TNNLS.2024.3478334
 - O. Piazzi, *"Analisi e implementazione di attacchi per ricostruzione dati nel Federated Unlearning"*, Relazione di Tirocinio. https://github.com/ottonepiazzi/federated-learning
 
