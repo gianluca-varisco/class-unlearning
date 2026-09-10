@@ -1,6 +1,6 @@
 # Multi-Class Federated Unlearning via Class-Discriminative Pruning (FedPrune) & FUIA Vulnerability Analysis
 
-Questo documento descrive l'estensione dell'algoritmo **FedPrune / Class-Discriminative Pruning (CDP)** (Wang et al., *ACM WWW 2022*) allo scenario di **Multi-Class Unlearning** ($N_{\mathrm{uc}} \in \{2, 3, 4\}$) su dataset MNIST, e la sua valutazione contro l'attacco di inferenza **FUIA (Top-$k$ Class Discrimination)** formalizzato da Zhou et al. (*IEEE TIFS 2026*).
+Questo documento descrive l'estensione dell'algoritmo **FedPrune / Class-Discriminative Pruning (CDP)** (Wang et al., *ACM WWW 2022*) allo scenario di **Multi-Class Unlearning** ($N_{\mathrm{uc}} \in \{2, 3, 4\}$) su dataset MNIST, e la sua valutazione contro l'attacco di inferenza **FUIA (Top-k Class Discrimination)** formalizzato da Zhou et al. (*IEEE TIFS 2026*).
 
 ---
 
@@ -11,7 +11,7 @@ Nello studio del **Class Unlearning**, la richiesta di oblio può coinvolgere co
 * **Nel FedPrune Multi-Class:** L'obiettivo è rimuovere l'influenza congiunta dell'insieme $C_{\mathrm{target}}$ direttamente dal modello globale convergente $W^o$ tramite potatura mirata cumulativa e pochissimi round di recupero federato (fine-tuning di 3 round), riducendo i tempi di esecuzione da svariati minuti a pochi secondi.
 
 L'esperimento si propone di rispondere a una domanda teorica chiave:
-> *"L'attacco FUIA Top-$k$ di Zhou et al. mantiene la capacità di discriminare l'intero gruppo di classi rimosse quando l'unlearning avviene tramite potatura selettiva congiunta anziché retraining?"*
+> *"L'attacco FUIA Top-k di Zhou et al. mantiene la capacità di discriminare l'intero gruppo di classi rimosse quando l'unlearning avviene tramite potatura selettiva congiunta anziché retraining?"*
 
 ---
 
@@ -43,15 +43,15 @@ La disattivazione congiunta dei filtri condivisi provoca un impatto prestazional
 
 ---
 
-## 3. L'Attacco FUIA Multi-Class (Zhou et al., 2026, Top-$k$ Ranking)
+## 3. L'Attacco FUIA Multi-Class (Zhou et al., 2026, Top-k Ranking)
 
-Per rilevare le classi disimparate, l'attaccante esegue l'**Algoritmo 3** generalizzato a Top-$k$ confrontando il modello originale $W^o$ con il modello potato $W^u$:
+Per rilevare le classi disimparate, l'attaccante esegue l'**Algoritmo 3** generalizzato a Top-k confrontando il modello originale $W^o$ con il modello potato $W^u$:
 
 1. **Variazione dei Pesi e dei Bias (Norma $L_1$):**
    $$\Delta w_i = \|w_o[i] - w_u[i]\|_1, \quad \Delta b_i = |b_o[i] - b_u[i]| \quad \forall i \in \{0, \dots, 9\}$$
 2. **Score di Discriminazione Normalizzato $S_d[i]$:**
    $$S_d[i] = \beta \frac{\Delta w_i}{\sum_j \Delta w_j} + (1 - \beta) \frac{\Delta b_i}{\sum_j \Delta b_j} \quad (\beta = 0.5)$$
-3. **Predizione Top-$k$:**
+3. **Predizione Top-k:**
    Si ordinano gli indici in ordine decrescente di punteggio $S_d[i]$ e si estraggono i primi $k = |C_{\mathrm{target}}|$ elementi:
    $$\hat{C}_{\mathrm{target}} = \text{Top-}k(S_d)$$
 

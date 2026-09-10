@@ -1,6 +1,6 @@
 # Analisi Comparativa: Multi-Class Federated Unlearning via FedPrune e Vulnerabilità all'Attacco FUIA
 
-Questo documento raccoglie, analizza e documenta i riscontri empirici derivanti dalla validazione dell'algoritmo **FedPrune / Class-Discriminative Pruning (CDP)** (Wang et al., *ACM WWW 2022*) esteso allo scenario **Multi-Class Unlearning** ($N_{\mathrm{uc}} \in \{2, 3, 4\}$) su dataset MNIST, confrontando la sua resilienza all'attacco **FUIA (Top-$k$ Ranking)** (Zhou et al., *IEEE TIFS 2026*) rispetto al **Retraining esatto da zero**.
+Questo documento raccoglie, analizza e documenta i riscontri empirici derivanti dalla validazione dell'algoritmo **FedPrune / Class-Discriminative Pruning (CDP)** (Wang et al., *ACM WWW 2022*) esteso allo scenario **Multi-Class Unlearning** ($N_{\mathrm{uc}} \in \{2, 3, 4\}$) su dataset MNIST, confrontando la sua resilienza all'attacco **FUIA (Top-k Ranking)** (Zhou et al., *IEEE TIFS 2026*) rispetto al **Retraining esatto da zero**.
 
 ---
 
@@ -72,7 +72,7 @@ In FedPrune, il fenomeno del *backbone drift* non si manifesta, consentendo a FU
 2. **Hard Zero-Out del Classificatore:** Per tutte le classi $c \in C_{\mathrm{target}}$, i parametri dell'ultimo strato vengono azzerati esplicitamente:
    $$W_{\text{classifier}}[c] \leftarrow 0, \quad b_{\text{classifier}}[c] \leftarrow 0 \quad \forall c \in C_{\mathrm{target}}$$
 3. **Stabilità nel Fine-Tuning:** Durante i soli 3 round di federazione, le 6 classi conservate non subiscono deriva geometrica ma solo minimi aggiustamenti.
-4. Di conseguenza, le differenze norma-$L_1$ per le classi eliminate corrispondono esattamente all'intera magnitudo dei pesi originali ($\Delta w_c = \|w_o[c]\|_1$), mentre per le classi mantenute rimangono prossime a zero ($S_d \le 0.0001$).
+4. Di conseguenza, le differenze norma-L_1 per le classi eliminate corrispondono esattamente all'intera magnitudo dei pesi originali ($\Delta w_c = \|w_o[c]\|_1$), mentre per le classi mantenute rimangono prossime a zero ($S_d \le 0.0001$).
 
 ---
 
