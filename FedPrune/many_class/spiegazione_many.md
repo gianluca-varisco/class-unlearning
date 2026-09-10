@@ -45,7 +45,7 @@ La disattivazione congiunta dei filtri condivisi provoca un impatto prestazional
 
 ## 3. L'Attacco FUIA Multi-Class (Zhou et al., 2026, Top-k Ranking)
 
-Per rilevare le classi disimparate, l'attaccante esegue l'**Algoritmo 3** generalizzato a Top-$k$ confrontando il modello originale $W^o$ con il modello potato $W^u$:
+Per rilevare le classi disimparate, l'attaccante esegue l'**Algoritmo 3** generalizzato a Top-k confrontando il modello originale $W^o$ con il modello potato $W^u$:
 
 1. **Variazione dei Pesi e dei Bias (Norma $L_1$):**
    $$\Delta w_i = \Vert w_o[i] - w_u[i] \Vert_1, \quad \Delta b_i = |b_o[i] - b_u[i]| \quad \forall i \in \{0, \dots, 9\}$$
