@@ -9,7 +9,7 @@ Il progetto rappresenta la prosecuzione e l'evoluzione del lavoro precedentement
 
 ---
 
-## 📌 Panoramica del Lavoro Svolto
+##  Panoramica del Lavoro Svolto
 
 Il focus principale è analizzare la vulnerabilità dei meccanismi di **Federated Unlearning** contro attacchi di *Model Inversion* e *Class Discrimination*, confrontando i modelli originale ($W^o$) e disimparato ($W^u$).
 
@@ -34,7 +34,7 @@ Il focus principale è analizzare la vulnerabilità dei meccanismi di **Federate
 
 ---
 
-## 📊 Sintesi dei Risultati Sperimentali
+##  Sintesi dei Risultati Sperimentali
 
 | Metodologia | Scenario ($N_{\mathrm{uc}}$) | Classi Rimosse | Classi Identificate ($N_{\mathrm{ic}}$) | Esito Attacco FUIA | Tempo di Unlearning |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -49,7 +49,7 @@ Il focus principale è analizzare la vulnerabilità dei meccanismi di **Federate
 
 ---
 
-## 💡 Riscontri Teorici e Metodologici
+##  Riscontri Teorici e Metodologici
 
 1. **Trade-off Efficienza Computazionale:**  
    FedPrune riduce il tempo di unlearning di oltre il **$96\%$** rispetto al retraining da zero (da svariati minuti a circa 3–4 secondi) intervenendo direttamente a posteriori su $W^o$ tramite potatura e soli 3 round di fine-tuning.
