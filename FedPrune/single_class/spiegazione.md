@@ -47,7 +47,7 @@ Per recuperare le prestazioni senza rieseguire decine di round:
 
 Terminata la procedura di FedPrune su una singola classe target (es. classe $c = 3$), il modello disimparato $W^u$ viene sottoposto all'**Algoritmo 3** del paper di Zhou et al. per valutare se la classe rimossa risulti identificabile.
 
-L'attaccante calcola la variazione norma-$L_1$ dei pesi e la deviazione assoluta dei bias dell'ultimo layer (`classifier[2]`) rispetto al modello originale $W^o$:
+L'attaccante calcola la variazione norma L_1 dei pesi e la deviazione assoluta dei bias dell'ultimo layer (`classifier[2]`) rispetto al modello originale $W^o$:
 $$\Delta w_i = \|w_o[i] - w_u[i]\|_1 \quad \forall i \in \{0, \dots, 9\}$$
 $$\Delta b_i = |b_o[i] - b_u[i]| \quad \forall i \in \{0, \dots, 9\}$$
 
